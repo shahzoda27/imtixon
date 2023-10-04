@@ -1,0 +1,93 @@
+@font-face {
+    font-family:"Poppins-medium";
+    src: url("../../Poppins/Poppins-Medium.ttf") format(truetype);
+}
+@font-face {
+    font-family: "Poppins-semibold";
+    src: url("../../Poppins/Poppins-SemiBold.ttf") format(truetype);
+}
+@font-face {
+    font-family: "Poppins-thin";
+    src: url("../../Poppins/Poppins-Thin.ttf")format(truetype);
+}
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 40px;
+    background-color: #1F2E35;
+    color: #fff;
+    .footer__boxs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        font-family:"Poppins-medium",sans-serif ;
+        .footer-box1{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+span{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+i{
+    font-size: 35px;
+}
+}
+        }
+        .footer-box2{
+            ul{
+                h3{
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                    font-family:"Poppins-semibold",sans-serif ;
+                }
+                li{
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    font-family: "Poppins-thin",sans-serif ;
+                }
+            }
+        }
+        .footer-box3{
+            h2{
+                max-width: 280px;
+                margin-bottom: 15px;
+                font-family:"Poppins-semibold",sans-serif ;font-family:"Poppins-semibold",sans-serif ;
+            }
+            .btn{
+                max-width: 320px;
+                padding: 15px 35px;
+                border: 1px solid;
+                margin-bottom: 25px;
+                background-color: #fff;
+            }
+            button{
+                padding: 10px 30px;
+                color:#fff;
+                background-color: #02897A;
+                border: none;
+            }
+        }
+    }
+    h2{
+        font-family:"Poppins-semibold",sans-serif ;
+    }
+}
+@media (max-width:920px) {
+    .footer{
+      h2{
+        font-size: 20px;
+      }
+    }
+}

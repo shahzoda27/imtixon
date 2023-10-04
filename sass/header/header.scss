@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Popins-semibold";
+    src: url("../../Poppins/Poppins-SemiBold.ttf")  format(truetype);
+}
+@font-face {
+    font-family: "Poppins-medium";
+    src: url("../../Poppins/Poppins-Medium.ttf") format(truetype);
+}
+$color1:#000;
+$color2:#fff;
+%center{
+    display: flex;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #1F2E35;
+    color: $color2;
+    .header__item{
+        @extend %center;
+        justify-content: space-around;
+        .header__item1{
+            @extend %center;
+            gap: 20px;
+            h1{
+                font-family:"Popins-semibold",sans-serif;
+                font-size: 30px; 
+            }
+        }
+        .header__item2{
+            @extend %center;
+            gap: 20px;
+            .header__item2-ul{
+                @extend %center;
+                gap: 20px; 
+                li{
+                    a{
+                        font-family:"Poppins-medium",sans-serif;
+                        font-size: 16px;  
+                        color: $color2;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .header__item2-btn1{
+                padding: 10px 25px;
+                background-color: #1F2E35;
+                color: $color2;
+                border-radius: 5px ;
+                border: 1px solid $color2;
+                cursor: pointer;
+            }
+            .header__item2-btn2{
+                padding: 10px 25px;
+                background-color:#02897A;
+                color: $color2;
+                border-radius: 5px ;
+                border:none;
+                cursor: pointer;
+            } 
+        }
+        .item-span{
+            display: none;
+        }
+    }
+}
+@media( min-width:751px) and (max-width:990px){
+    .header{
+        .header__item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header__item1{
+                h1{
+                    font-size: 24px;
+                }
+            }
+            .header__item2{
+                .header__item2-ul{
+                    li{
+                        a{
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .header__item2-btn1{
+                    padding: 5px 20px;
+                }
+                .header__item2-btn2{
+                    padding: 5px 20px;
+                }
+            }
+        }
+    }
+}
+@media( max-width:750px){
+    .header{
+        padding: 10px 22px;
+        .header__item{
+            @extend %center;
+            gap: 50px;
+            justify-content: space-between;
+            .header__item1{
+                gap: 15px;
+                h1{
+                    font-size: 20px;
+                }
+            }
+            .header__item2{
+                display: none;
+            }
+            .item-span{
+                display: block;
+            }
+        }
+    }
+}
